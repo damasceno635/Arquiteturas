@@ -2,8 +2,8 @@
 
 Este projeto tem como objetivo implementar um **sistema simples de cálculo de frete** utilizando três padrões arquiteturais amplamente utilizados no desenvolvimento de software: MVC, MVP e MVVM. A proposta é demonstrar, na prática, as diferenças entre essas arquiteturas, mantendo a mesma Regra de Negócio:
 
-- frete = (peso * 0.5) + (distancia * 0.2);
-- Se o peso for maior que **10kg**, é adicionada uma taxa fixa de **R$ 10,00**;
+- frete = (peso * 0.5) + (distancia * 0.2)
+- Se o peso for maior que **10kg**, é adicionada uma taxa fixa de **R$ 10,00**
 
 ## 🧠 Padrões Arquiteturais
 
@@ -41,24 +41,24 @@ Este projeto tem como objetivo implementar um **sistema simples de cálculo de f
 
 Para Windows:
 ```bash
-javac -d . (Get-ChildItem -Recurse -Filter *.java | ForEach-Object { $_.FullName })
+javac -d bin (Get-ChildItem -Recurse -Filter *.java | ForEach-Object { $_.FullName })
 ```
 
 ### 3. Executar
 
 MVC:
 ```bash
-java mvc.Main
+java -cp bin mvc.Main
 ```
 
 MVP:
 ```bash
-java mvp.Main
+java -cp bin mvp.Main
 ```
 
 MVVM:
 ```bash
-java mvvm.Main
+java -cp bin mvvm.Main
 ```
 
 ## ✅ Boas Práticas Aplicadas
